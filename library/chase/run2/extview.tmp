@@ -1,0 +1,93 @@
+*
+*
+*
+*                       LINUX           Tue Jun  4 19:29:29 2024
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  HSPICE LIBRARY
+*
+*
+*
+
+*
+.SUBCKT nand2_layout A B O
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD1_1	avC5	A#4	avC6#3	avC6#5	nmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.24U
++ AD=0.0144P	AS=0.0672P	PD=0.36U	PS=1.04U
++ simW=2.4e-07 fw=2.4e-07
+MavD1_2	O#3	B#3	avC5	avC6#5	nmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.24U
++ AD=0.0672P	AS=0.0144P	PD=1.04U	PS=0.36U
++ simW=2.4e-07 fw=2.4e-07
+MavD7_1	O#2	A#2	avC4#2	avC4#6	pmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.24U
++ AD=0.0384P	AS=0.0672P	PD=0.56U	PS=1.04U
++ simW=2.4e-07 fw=2.4e-07
+MavD7_2	avC4#4	B#2	O#2	avC4#6	pmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.24U
++ AD=0.0672P	AS=0.0384P	PD=1.04U	PS=0.56U
++ simW=2.4e-07 fw=2.4e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rh1	avC4#7	avC4#5	    1.8041	$mt2	$X=-11.8325 $Y=5.9
+Rh2	avC4#5	avC4#3	    0.3548	$mt2	$X=-12.77 $Y=5.9
+Rh3	avC4#3	avC4	    0.3119	$mt2	$X=-13.6 $Y=5.9
+Rh4	avC6#4	avC6#2	    0.7191	$mt2	$X=-13.14 $Y=2.895
+Rh5	avC6#2	avC6#1	    1.7869	$mt2	$X=-14.4825 $Y=2.895
+Ri1	A	A#1	   12.2314	$mt1	$X=-16.12 $Y=5.6025
+Ri2	avC6#2	avC6#3	   17.0277	$mt1	$X=-14.005 $Y=3.4125
+Ri3	avC4	avC4#2	   16.7744	$mt1	$X=-13.99 $Y=5.5725
+Ri4	B	B#1	    0.2029	$mt1	$X=-13.57 $Y=2.465
+Ri5	avC4#3	avC4#4	   16.7744	$mt1	$X=-13.21 $Y=5.5725
+Ri6	avC4#5	avC4#6	   16.7810	$mt1	$X=-12.33 $Y=5.5675
+Ri7	avC6#4	avC6#5	   17.0102	$mt1	$X=-12.265 $Y=3.17
+Ri8	O	O#1	    4.0921	$mt1	$X=-10.5175 $Y=2.45
+Ri9	O#1	O#2	   15.5845	$mt1	$X=-13.4825 $Y=4.495
+Ri10	O#1	O#3	   15.3107	$mt1	$X=-13.365 $Y=4.4325
+Rj1	A#2	A#3	   62.6398	$poly	$X=-13.78 $Y=5.0675
+Rj2	A#3	A#1	  107.9526	$poly	$X=-14.3575 $Y=4.495
+Rj3	A#3	A#4	   45.1172	$poly	$X=-13.795 $Y=4.2425
+Rj4	B#2	B#3	  115.9115	$poly	$X=-13.36 $Y=5.0675
+Rj5	B#3	B#1	  118.0435	$poly	$X=-13.575 $Y=3.2825
+*
+*       CAPACITOR CARDS
+*
+*
+C1	A	avC6	3.160E-16	$X=-16.119 $Y=6.4505
+C2	B	avC6	2.353E-16	$X=-13.572 $Y=1.9435
+C3	O	avC6	4.487E-16	$X=-10.5235 $Y=2.463
+C4	avS17	avC6	2.277E-16	$X=-13.817 $Y=7.159
+C5	avC4	avC6	1.206E-16	$X=-14.3445 $Y=5.8575
+C6	A#2	avC6	7.274E-17	$X=-13.7895 $Y=5.196
+C7	B#2	avC6	1.302E-16	$X=-13.4345 $Y=4.7985
+C8	A#4	avC6	8.205E-17	$X=-13.797 $Y=3.929
+C9	B#3	avC6	1.526E-16	$X=-13.577 $Y=3.9215
+C10	A#1	avC6	2.160E-16	$X=-15.103 $Y=4.493
+C11	B#1	avC6	1.107E-16	$X=-13.5755 $Y=2.7555
+C12	avC4#3	avC6	4.990E-17	$X=-13.2125 $Y=5.8565
+C13	avC4#5	avC6	5.146E-17	$X=-12.3325 $Y=5.8555
+C14	avC4#7	avC6	3.052E-16	$X=-11.342 $Y=6.313
+C15	avC4#6	avC6	9.209E-17	$X=-12.677 $Y=5.305
+C16	avC4#2	avC6	3.280E-17	$X=-13.982 $Y=5.3095
+C17	O#2	avC6	7.897E-17	$X=-13.587 $Y=5.167
+C18	avC4#4	avC6	4.108E-17	$X=-13.1925 $Y=5.3095
+C19	O#3	avC6	4.275E-17	$X=-13.377 $Y=3.9675
+C20	A#3	avC6	1.090E-16	$X=-13.797 $Y=4.54
+C21	O#1	avC6	2.898E-16	$X=-11.803 $Y=4.4915
+*
+*
+.ENDS nand2_layout
+*

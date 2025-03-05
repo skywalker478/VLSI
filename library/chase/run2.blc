@@ -1,0 +1,6 @@
+"pmos1v(MOS)" "pmos1v(MOS)"
+"nmos1v(MOS)" "nmos1v(MOS)"
+"nand2_layout layout chase" "nand2_1 schematic chase" "nmos1v(MOS)" "pmos1v(MOS)"
+"nand2_layout layout chase" "nand2_1 schematic chase" "nmos1v(MOS)" "pmos1v(MOS)"
+Devices filtered from layout
+"TIE"
